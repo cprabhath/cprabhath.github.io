@@ -7,9 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>My Projects</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <script src="https://use.fontawesome.com/809c2bfca6.js"></script>
-</head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">  <script src="https://use.fontawesome.com/809c2bfca6.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script></head>
 <body>
 <header>
     <div class="wrapper">
@@ -35,17 +34,43 @@
       </div>
       <div class="content-wrapper">
           <div class="content">
-              <div class="card" style="width: 60rem;">
+            <div class="title">
+              <div class="card col-md-11">
                 <img src="assets/img/project1.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Random Password Genarator</h5>
                   <p class="card-text">Random Password Genarator is a password genarator to create strong and complex passwords. Created by using HTML, CSS, JavaScript</p>
-                  <a href="https://iifhnqtpqkh260crwungca-on.drv.tw/Password/" target="_blank" class="btn btn-primary">Show Project</a>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    View Demo
+                  </a>
                 </div>
               </div>
+            </div>
           </div>
       </div>
     </div>
 </header>
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel"># Project Demo [Random Password Generator]</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="alert alert-warning alert-dismissible" role="alert" id="liveAlert">
+          <b>Warning:</b> For Better View Please use Desktop application. You can Download from <a href="https://www.google.com/chrome/" target="_blank" class="a">here</a> if you're already on the desktop app you can ignore this warning. this webpage not supported for mobiles
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <iframe src="https://iifhnqtpqkh260crwungca-on.drv.tw/Password/" frameborder="0" width="100%" height="100%" allowfullscreen="allowfullscreen"
+        mozallowfullscreen="mozallowfullscreen"
+        msallowfullscreen="msallowfullscreen"
+        oallowfullscreen="oallowfullscreen"
+        webkitallowfullscreen="webkitallowfullscreen"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
