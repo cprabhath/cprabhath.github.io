@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="HandheldFriendly" content="true">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Ideas | Personal Projects</title>
+  <title>My Projects</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/img/fevicon.png" type="image/icon type">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">  <script src="https://use.fontawesome.com/809c2bfca6.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/809c2bfca6.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script></head>
 <body>
 <header>
@@ -25,10 +26,11 @@
             </div>
             <div class="social">
               <ul>
-                <li><a href="https://facebook.com/Prabath119" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i> </a> </li>
-                <li><a href="https://twitter.com/#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-                <li><a href="https://github.com/#" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/Prabath119" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://facebook.com/Prabath119" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="View facebook Profile"></i> </a> </li>
+                <li><a href="https://twitter.com/#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="View twitter Profile"></i></a></li>
+                <li><a href="https://github.com/#" target="_blank"><i class="fa fa-github-square" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="View github Profile"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/Prabath119" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="View linkedin Profile"></i></a></li>
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"><i class="fa fa-id-badge" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="View my CV"></i></a></li>
               </ul>
             </div>
           </div>
@@ -116,6 +118,28 @@
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">#My Curriculum vitae</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="assets/pdf/chinthaka prabath.pdf" style="width: 100%;height: 100%;border: none;"></iframe>
+      </div>
+    </div>
+  </div>
 </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
 </body>
 </html>
