@@ -35,3 +35,8 @@ html::-webkit-scrollbar {
   html {
     scroll-behavior: smooth;
   }
+
+.fa:hover{
+    animation: bounce;
+    animation-duration: 1s;
+  }
