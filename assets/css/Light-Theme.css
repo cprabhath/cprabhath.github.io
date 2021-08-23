@@ -397,6 +397,23 @@ header .navbar ul li a{
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
 
+
+  .modal::-webkit-scrollbar{
+    width:1.4rem;
+}
+
+.modal::-webkit-scrollbar-track{
+    background:#222;
+}
+
+.modal::-webkit-scrollbar-thumb{
+    background:var(--yellow);
+}
+
+.modal::-webkit-scrollbar-thumb:hover{
+    background:#3dbffc;
+}
+
   /* Modal Content */
   .modal-content {
     position: relative;
