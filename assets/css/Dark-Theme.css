@@ -212,7 +212,7 @@ header .navbar ul li a{
 }
 
 .about .row .counter .box:hover{
-    background:rgb(49, 49, 49);
+    background:#464646;
 }
 
 .about .row .counter .box span{
