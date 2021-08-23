@@ -211,6 +211,10 @@ header .navbar ul li a{
     margin:2rem;
 }
 
+.about .row .counter .box:hover{
+    background:rgb(49, 49, 49);
+}
+
 .about .row .counter .box span{
     font-size: 4rem;
     color:var(--yellow);
