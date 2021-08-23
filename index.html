@@ -1,146 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="HandheldFriendly" content="true">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My Projects</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" href="assets/img/fevicon.png" type="image/icon type">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <script src="https://use.fontawesome.com/809c2bfca6.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script></head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-<body>
-<header>
-    <div class="wrapper">
-      <div class="sidebar">
-          <div class="bio">
-            <div class="avatar">
-              <img src="assets/img/avatar.jpg" alt="">
-            </div>
-            <br>
-            <div class="title">
-              <h1>Prabhath Hettiarachchi</h1>
-              <h2>Front-End Developer</h2>
-            </div>
-            <div class="social">
-              <ul>
-                <li><a href="https://facebook.com/Prabath119" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="View facebook Profile"></i> </a> </li>
-                <li><a href="https://twitter.com/#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="View twitter Profile"></i></a></li>
-                <li><a href="https://github.com/#" target="_blank"><i class="fa fa-github-square" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="View github Profile"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/Prabath119" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="View linkedin Profile"></i></a></li>
-                <li><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"><i class="fa fa-id-badge" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="View my CV"></i></a></li>
-              </ul>
-            </div>
-          </div>
-      </div>
-      <div class="content-wrapper">
-          <div class="content">
-            <h2>[Completed Projects]</h2>
-            <br>
-            <div class="title animate__animated animate__fadeIn animate__delay-0.8s">
-              <div class="card col-md-11">
-                <img src="assets/img/project1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Random Password Genarator</h5>
-                  <p class="card-text">Random Password Genarator is a password genarator to create strong and complex passwords. Developed by using HTML, CSS, JavaScript</p>
-                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    View Project
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/fevicon.png" type="image/icon type">
+    <title>Ideas | Personal Projects</title>
 
-          <div class="content">
-            <h2>[Ongoing Projects]</h2>
-            <br>
-            <div class="title animate__animated animate__fadeIn animate__delay-0.8s">
-              <div class="card col-md-11">
-                <img src="assets/img/Project2.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Clinic Managment System</h5>
-                  <p class="card-text">This Managment System helps to manage your clinic. Back-End Developed by using JAVA Front-End Developed by using JAVAFX, </p>
-                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-                    View Project
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+
+    <!-- custom css file link  -->
+    <link id="Theme" rel="stylesheet" href="assets/css/Light-Theme.css">
+    <link id="hover" rel="stylesheet" href="assets/css/hover-min.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+<header>
+
+    <div class="user">
+        <img src="assets/img/avatar.jpg" alt="">
+        <h3 class="name">Prabhath Hettiarachchi</h3>
+        <p class="post">front end developer</p>
     </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home" class="hvr-rectangle-out">home</a></li>
+            <li><a href="#about" class="hvr-rectangle-out">about me</a></li>
+            <li><a href="#projects" class="hvr-rectangle-out">Projects</a></li>
+        </ul>
+    </nav>
+
 </header>
 
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-fullscreen modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel"># Project Demo [Random Password Generator]</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="alert alert-warning alert-dismissible" role="alert" id="liveAlert">
-          <center><b>Warning:</b> For Better View Please use Desktop application. You can Download from <a href="https://www.google.com/chrome/" target="_blank" class="a">here</a> if you're already on the desktop app you can ignore this warning. this webpage not supported for mobiles</center>
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-        <iframe src="https://iifhnqtpqkh260crwungca-on.drv.tw/Password/" frameborder="0" width="100%" height="100%" allowfullscreen="allowfullscreen"
-        mozallowfullscreen="mozallowfullscreen"
-        msallowfullscreen="msallowfullscreen"
-        oallowfullscreen="oallowfullscreen"
-        webkitallowfullscreen="webkitallowfullscreen"></iframe>
-      </div>
+<!-- header section ends -->
+
+<div id="menu" class="fas fa-bars" style="background-color: transparent;"></div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <h3>HI THERE !</h3>
+    <h1>I'm <span>Prabhath Hettiarachchi</span></h1>
+    <p>Looking for a challenging role in a reputable organization to utilize my technical, database, and Programming skills for the growth of the organization as well as to  enhance my knowledge about
+        new and emerging trends in IT Sector
+    </p>
+    <a href="#about"><button class="btn hvr-rectangle-out">about me <i class="fas fa-user"></i></button></a>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+<h1 class="heading"> <span>Let me Introduce</span> myself ! </h1>
+
+<div class="row">
+
+    <div class="info">
+        <h3> <span> name : </span> Prabhath Hettiarachchi </h3>
+        <h3> <span> age : </span> 24 </h3>
+        <h3> <span> qualification : </span> Diploma in ICT </h3>
+        <h3> <span> post : </span> front end developer </h3>
+        <h3> <span> language : </span> Sinhala | English </h3>
+        <br>
+        <a href="assets/pdf/chinthaka prabath.pdf" target="_blank"><button class="btn hvr-rectangle-out"> download CV <i class="fas fa-download"></i> </button></a>
     </div>
-  </div>
+
+    <div class="counter">
+
+        <div class="box">
+            <span>12+</span>
+            <h3>Months of experience</h3>
+        </div>
+
+        <div class="box">
+            <span>2+</span>
+            <h3>project completed</h3>
+        </div>
+
+    </div>
+
 </div>
 
-<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-fullscreen modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel"># Project Demo [Clinic Managment System] ScreenShots</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <h3 style="text-align: center;">Logged in as Admin</h3>
-        <div class="alert alert-info" role="alert">
+</section>
+
+<!-- about section ends -->
+
+<!-- portfolio section starts  -->
+<section class="gallery" id="projects">
+
+    <h1 class="heading"> My <span> Projects</span> </h1>
+    <br><br>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="assets/img/g-1.jpg" alt="">
+            <div class="content">
+                <h3>Password Genarator</h3>
+                <span>01/05/2021</span>
+                <br>
+                <a href="https://iifhnqtpqkh260crwungca-on.drv.tw/Password/" target="_blank">Show</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="assets/img/g-2.jpg" alt="">
+            <div class="content">
+                <h3>Clinic Managment System</h3>
+                <span>01/8/2020</span>
+                <br>
+                <a href="#" id="myBtn" target="_blank">Show</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Clinic Managment System</h2>
+    </div>
+    <br>
+    <div class="modal-body">
+        <h3 style="text-align: center; font-weight: bolder; font-size: 15px;">Logged in as Admin</h3>
+        <div>
           <p style="text-align: center;">By Logged in as Admin you can control everything of this software such as Add , Remove or Update UserData etc..</p>
         <img src="assets/img/Overview/project3.png" alt="" width="100%" height="100%" >
         </div>
-        <br><br>
-        <h3 style="text-align: center;">Logged in as Reception</h3>
-        <div class="alert alert-info" role="alert">
+        <br><br><br>
+        <h3 style="text-align: center; font-weight: bolder; font-size: 15px;">Logged in as Reception</h3>
+        <div>
           <p style="text-align: center;">this search box also connected to the database and it can load every patient's ID numbers. it's useful to search patients. once you found the correct ID number, by pressing "Enter" key on the keyboard it will load automatically every details of the relevant patient </p>
           <img src="assets/img/Overview/project4.png" alt="" width="100%" height="100%" >
         </div>
-      </div>
     </div>
   </div>
-</div>
-
-<div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">#My Curriculum vitae</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <iframe src="assets/pdf/chinthaka prabath.pdf" style="width: 100%; height: 100%; border:none;"></iframe>
-      </div>
-    </div>
-  </div>
-</div>
 
 </div>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
 <script>
-  $(function () {
-  $('[data-toggle="tooltip"]').tooltip();
-})
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 </script>
+
+<!-- portfolio section ends -->
+
+
+<!-- scroll top button  -->
+
+<a href="#home" class="top">
+    <i class="fa fa-arrow-circle-up fa-4x" aria-hidden="true"></i>
+</a>
+<script>
+    var theme = document.getElementById('Theme');
+    var hover = document.getElementById('hover');
+    const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
+    if (darkThemeMq.matches) {
+    // Theme set to dark.
+      theme.setAttribute('href', 'assets/css/Dark-Theme.css');
+      hover.setAttribute('href', 'assets/css/hover-min-dark.css');
+    } else {
+    // Theme set to light.
+      theme.setAttribute('href', 'assets/css/Light-Theme.css');
+      hover.setAttribute('href', 'assets/css/hover-min.css');
+    }
+</script>
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="assets/js/script.js"></script>
 </body>
 </html>
