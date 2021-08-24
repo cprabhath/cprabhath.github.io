@@ -41,6 +41,10 @@ html::-webkit-scrollbar-thumb{
     background:var(--yellow);
 }
 
+html::-webkit-scrollbar-thumb:hover{
+    background:#3dbffc;
+}
+
 body{
     background:#fff;
     overflow-x: hidden;
