@@ -15,8 +15,10 @@
     <link id="hover" rel="stylesheet" href="assets/css/hover-min.css">
 
 </head>
-<body>
 
+<body>
+<div id="preloader"></div>
+    <div class="section-divide">
 <!-- header section starts  -->
 <header>
 
@@ -41,7 +43,6 @@
 <div id="menu" class="fas fa-bars" style="background-color: transparent;"></div>
 
 <!-- home section starts  -->
-
 <section class="home" id="home">
 
     <h3>HI THERE !</h3>
@@ -65,7 +66,8 @@
 
     <div class="info">
         <h3> <span> name : </span> Prabhath Hettiarachchi </h3>
-        <h3> <span> age : </span><script>
+        <h3> <span> age : </span>
+        <script>
           var today = new Date();
           var year = today.getFullYear();
           var bornYear = 1997;
@@ -162,9 +164,15 @@
   </div>
 
 </div>
+<!-- portfolio section ends -->
 
+<!-- scroll top button  -->
+
+<a href="#home" class="top">
+    <i class="fa fa-arrow-circle-up fa-4x" aria-hidden="true"></i>
+</a>
 <script>
-// Get the modal
+  // Get the modal
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
@@ -189,19 +197,14 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-</script>
-
-<!-- portfolio section ends -->
-
-
-<!-- scroll top button  -->
-
-<a href="#home" class="top">
-    <i class="fa fa-arrow-circle-up fa-4x" aria-hidden="true"></i>
-</a>
-<script>
     var theme = document.getElementById('Theme');
     var hover = document.getElementById('hover');
+    var loader = document.getElementById("preloader");
+
+    window.addEventListener("load", function(){ 
+        loader.style.display = "none";
+    });
+
     const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
     if (darkThemeMq.matches) {
     // Theme set to dark.
@@ -218,5 +221,6 @@ window.onclick = function(event) {
 
 <!-- custom js file link  -->
 <script src="assets/js/script.js"></script>
+</div>
 </body>
 </html>
