@@ -15,11 +15,13 @@
     <link id="hover" rel="stylesheet" href="assets/css/hover-min.css">
 
 </head>
-<div id="preloader"></div>
+
 <body>
-<div class="section-divide">
+<div id="preloader"></div>
+
+<div class="body">
 <!-- header section starts  -->
-<div class="header">
+<header>
 
     <div class="user">
         <img src="assets/img/avatar.jpg" alt="">
@@ -35,13 +37,14 @@
         </ul>
     </nav>
 
-</div>
+</header>
 
 <!-- header section ends -->
 
 <div id="menu" class="fas fa-bars" style="background-color: transparent;"></div>
 
 <!-- home section starts  -->
+
 <section class="home" id="home">
 
     <h3>HI THERE !</h3>
@@ -96,6 +99,7 @@
     </div>
 
 </div>
+
 </section>
 
 <!-- about section ends -->
@@ -198,13 +202,11 @@ window.onclick = function(event) {
     var theme = document.getElementById('Theme');
     var hover = document.getElementById('hover');
     var loader = document.getElementById("preloader");
-
-    window.addEventListener("load", function(){ 
+    window.addEventListener("load", function(){
         setTimeout(function() {
-             loader.style.display = "none";
+            loader.style.display = "none";
         }, 3000);
     });
-
     const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
     if (darkThemeMq.matches) {
     // Theme set to dark.
