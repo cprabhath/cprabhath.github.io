@@ -15,12 +15,11 @@
     <link id="hover" rel="stylesheet" href="assets/css/hover-min.css">
 
 </head>
-
-<body>
 <div id="preloader"></div>
-    <div class="section-divide">
+<body>
+<div class="section-divide">
 <!-- header section starts  -->
-<header>
+<div class="header">
 
     <div class="user">
         <img src="assets/img/avatar.jpg" alt="">
@@ -36,7 +35,7 @@
         </ul>
     </nav>
 
-</header>
+</div>
 
 <!-- header section ends -->
 
@@ -97,7 +96,6 @@
     </div>
 
 </div>
-
 </section>
 
 <!-- about section ends -->
@@ -129,6 +127,7 @@
                 <a href="#" id="myBtn">Show</a>
             </div>
         </div>
+
     </div>
 
 </section>
@@ -201,8 +200,8 @@ window.onclick = function(event) {
     var loader = document.getElementById("preloader");
 
     window.addEventListener("load", function(){ 
+         loader.style.display = "none";
         setTimeout(function() {
-            loader.style.display = "none";
         }, 6000);
     });
 
