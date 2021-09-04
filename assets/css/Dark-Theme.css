@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
+#preloader{
+    background: #fff url("../img/loader.gif") no-repeat center center;
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+}
+
 :root{
     --yellow:#2098D1;
     --bg-color-1:#000;
@@ -48,12 +57,16 @@ html::-webkit-scrollbar-thumb:hover{
 body{
     background:#111;
     overflow-x: hidden;
-    padding-left: 35rem;
+    /*padding-left: 35rem;*/
 }
 
 section{
     min-height: 100vh;
     padding:1rem;
+}
+
+.section-divide{
+    padding-left: 35rem;
 }
 
 .btn{
@@ -345,9 +358,9 @@ header .navbar ul li a{
     left:0%;
    }
 
-   body{
-       padding:0;
-   }
+   .section-divide{
+        padding:0;
+    }
 
 }
 
@@ -377,8 +390,6 @@ header .navbar ul li a{
         width:100%;
     }
 
-
-
  }
 
  .modal {
@@ -395,21 +406,23 @@ header .navbar ul li a{
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
 
-  .modal::-webkit-scrollbar{
-    width:1.4rem;
-}
+    .modal::-webkit-scrollbar{
+        width:1.4rem;
+    }
 
-.modal::-webkit-scrollbar-track{
-    background:#222;
-}
+    .modal::-webkit-scrollbar-track{
+        background:#222;
+    }
 
-.modal::-webkit-scrollbar-thumb{
-    background:var(--yellow);
-}
+    .modal::-webkit-scrollbar-thumb{
+        background:var(--yellow);
+    }
 
-.modal::-webkit-scrollbar-thumb:hover{
-    background:#3dbffc;
-}
+    .modal::-webkit-scrollbar-thumb:hover{
+        background:#3dbffc;
+    }
+
+
 
   /* Modal Content */
   .modal-content {
@@ -423,7 +436,7 @@ header .navbar ul li a{
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
   }
 
   /* Add Animation */
