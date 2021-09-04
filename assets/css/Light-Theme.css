@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
+#preloader{
+    background: #fff url("../img/loader.gif") no-repeat center center;
+    background-size: 20%;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+}
+
+
 :root{
     --yellow:#2098D1;
     --bg-color-1:#eee;
@@ -48,7 +58,6 @@ html::-webkit-scrollbar-thumb:hover{
 body{
     background:#fff;
     overflow-x: hidden;
-    padding-left: 35rem;
 }
 
 section{
@@ -84,11 +93,11 @@ section{
     color:var(--yellow);
 }
 
-header{
+.header{
     position: fixed;
     top:0;
     left:0;
-   
+    z-index: 0.5;
     height:100%;
     width:35rem;
     background:#fff;
@@ -100,7 +109,7 @@ header{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-header .user img{
+.header .user img{
     height:17rem;
     width:17rem;
     border-radius: 50%;
@@ -109,27 +118,27 @@ header .user img{
     border:.7rem solid var(--yellow);
 }
 
-header .user .name{
+.header .user .name{
     font-size: 3.5rem;
     color:#000;
 }
 
-header .user .post{
+.header .user .post{
     font-size: 2rem;
     color:#000;
 }
 
-header .navbar{
+.header .navbar{
     width:100%;
 }
 
-header .navbar ul{
+.header .navbar ul{
     list-style: none;
     padding:1rem 3rem;
 }
 
 
-header .navbar ul li a{
+.header .navbar ul li a{
     display: block;
     padding:1rem;
     margin:1.5rem 0;
@@ -475,11 +484,3 @@ header .navbar ul li a{
     padding-left: 35rem;
 }
 
-#preloader{
-    background: #fff url("../img/loader.gif") no-repeat center center;
-    background-size: 20%;
-    height: 100%;
-    width: 100%;
-    z-index: 100;
-    position: fixed;
-}
