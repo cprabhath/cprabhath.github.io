@@ -231,9 +231,6 @@ header .navbar ul li a{
 
 .about .row .counter .box:hover{
     background:rgb(206, 206, 206);
-    text-align: center;
-    padding: 2rem;
-    margin:2rem;
 }
 
 .about .row .counter .box span{
