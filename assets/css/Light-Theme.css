@@ -16,17 +16,7 @@
     height: 100%;
     position: fixed;
     z-index: 100;
-    animation: FadeIn .5s;
 }
-
-  @keyframes FadeIn{
-    from{
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-    }
-  }
 
 *{
     font-family: 'Nunito', sans-serif;
