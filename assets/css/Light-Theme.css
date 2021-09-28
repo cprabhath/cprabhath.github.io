@@ -479,3 +479,58 @@ header .navbar ul li a{
   .modal-body {
       padding: 2px 16px;
     }
+  .container-skills {
+        width: 100%;
+        background-color: #ddd;
+        height: 20px;
+      }
+
+      .skills {
+        text-align: right;
+        padding: 0.5rem;
+        color: white;
+        font-size: 1.2rem;
+        height: 20px;
+        font-weight: bold;
+      }
+      .title
+    {
+	font-size: 2rem;
+    font-weight: bold;
+    }
+
+.html {
+    width: 95%;
+    background-color: #2196F3;
+  }
+
+  .css {
+    width: 90%;
+    background-color: #2196F3;
+  }
+
+  .js {
+    width: 80%;
+    background-color: #2196F3;
+  }
+
+  .php {
+    width: 60%;
+    background-color: #2196F3;
+  }
+  .express {
+    width: 50%;
+    background-color: #2196F3;
+  }
+  .mysql {
+    width: 60%;
+    background-color: #2196F3;
+  }
+  @media only screen and (max-width: 812px) {
+    .skills {
+         font-size: 1.5rem;
+         }
+    .title {
+         font-size: 1.2rem;
+         }
+    }
