@@ -1,4 +1,3 @@
-$(document).ready(function () {
   $(window).on("load", function () {
     $(".loader-style").hide();
   });
@@ -75,5 +74,4 @@ $(document).ready(function () {
     // Theme set to light.
     theme.setAttribute("href", "assets/css/Light-Theme.css");
     hover.setAttribute("href", "assets/css/hover-min.css");
-  }
-});
+  };
