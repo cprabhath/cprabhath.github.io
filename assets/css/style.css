@@ -1375,6 +1375,13 @@ textarea.form-input::-webkit-resizer {
  * responsive larger than 450px screen
  */
 
+@media (max-width: 320px) {
+  .skill .title-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 @media (min-width: 320px) {
   .skill .title-wrapper {
     display: flex;
